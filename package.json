@@ -26,7 +26,7 @@
     "build": "rm -rf ./lib && NODE_ENV=production tsc",
     "release": "npx semantic-release",
     "commit": "npm run build && git add . && npx git-cz && git push",
-    "prepublish": "npm run build"
+    "prepublish-ignore": "npm run build"
   },
   "config": {
     "commitizen": {
